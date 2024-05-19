@@ -1,0 +1,290 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* START */
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* COLOURS */
+:root {
+    --verydarkblue: hsl(243, 87%, 12%);
+    --desaturatedblue: hsl(238, 22%, 44%);
+    --brightblue: hsl(224, 93%, 58%);
+    --moderatecyan: hsl(170, 45%, 43%);
+    --lightgrayishblue: hsl(240, 75%, 98%);
+    --lightgray: hsl(0, 0%, 75%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 1440px;
+    /* padding-left: 4.5%;
+      padding-right: 4.5%; */
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-top: 3.5%;
+    align-items: center;
+    border-color: aqua;
+
+}
+
+.logo {
+    width: 125px;
+
+}
+
+.header_links {
+    display: flex;
+    gap: 3rem;
+}
+
+.header_links button {
+    color: hsl(238, 22%, 44%);
+    border: 0;
+    background-color: #ffffff00;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+
+
+}
+
+.hero {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15%;
+
+}
+
+.hero_left {
+    width: 50%;
+    /* margin:auto; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: hsl(243, 87%, 12%);
+
+}
+
+.hero_heading {
+    font-weight: 700;
+    font-size: 35px;
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+
+}
+
+.hero_para {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: -0.2px;
+}
+
+.hero_left_container {
+    display: flex;
+    gap: 1rem;
+
+}
+
+#email {
+    padding: 12px 100px 7px 14px;
+    border-radius: 3px;
+    border-width: 1.5px;
+    border-color: hsl(243, 87%, 12%);
+
+}
+
+#email::placeholder {
+    color: hsla(0, 0%, 75%, 0.681);
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+}
+
+.getstarted1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 3px;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    font-size: 12px;
+}
+
+.hero_right {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-top: 10px;
+
+}
+
+.hero_image {
+    width: 100%;
+}
+
+.curve-img {
+    padding-bottom: 0%;
+    display: flex;
+
+}
+
+/* SECOND SECTION */
+.second_section {
+    padding-top: -50%;
+    background-color: var(--lightgrayishblue);
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10%;
+
+
+}
+
+.sec_left {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: hsl(243, 87%, 12%);
+    padding-left: 5%;
+}
+
+.sec_heading {
+    font-weight: 700;
+    font-size: 36px;
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+    font-stretch: expanded;
+}
+
+.sec_para {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: -0.2px;
+    width: 70%;
+
+}
+
+/* BUTTON- SEE HOW FYLO WORKS */
+.sec_link {
+    outline: none;
+    border-width: 0px 0px 1.5px 0px;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--moderatecyan);
+    border-color: var(--moderatecyan);
+    align-self: flex-start;
+    padding-bottom: 4px;
+    border-style: solid;
+}
+
+
+a {
+    text-decoration-line: none;
+    color: inherit;
+}
+
+.arrow_icon {
+    width: 16px;
+    padding-left: 4px;
+}
+
+.quote {
+    width: 50%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: -0.2px;
+    color: var(--desaturatedblue);
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    /* padding-right: ; */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+
+
+}
+
+
+.quote_txt {
+    width: 90%;
+
+}
+
+.quote_caption {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.kyle {
+    font-weight: bold !important;
+}
+
+.kyletitle {
+    font-weight: 300 !important;
+}
+
+.avatar {
+    border-radius: 150px;
+    width: 40px;
+}
+
+.sec_right {
+    width: 40%;
+    padding-right: 5%;
+}
+
+/* THIRD SECTION */
+
+.third {
+    background-color: var(--desaturatedblue);
+    color:white;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+   
+}
+.footer_logo{
+    display:flex;
+}
